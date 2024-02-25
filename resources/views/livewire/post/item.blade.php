@@ -26,6 +26,12 @@
 
         <div class="my-2">
             <x-video />
+            <br>
+            <x-video />
+            <br>
+            <x-video />
+            <br>
+            <x-video />
         </div>
 
     </main>
