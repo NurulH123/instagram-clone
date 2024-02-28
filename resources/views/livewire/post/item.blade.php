@@ -26,6 +26,8 @@
 
         <div class="my-2">
             <x-video />
+            <!-- Slider main container -->
+            
         </div>
 
     </main>
