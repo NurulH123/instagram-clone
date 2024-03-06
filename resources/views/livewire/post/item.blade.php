@@ -48,15 +48,27 @@
                     <!-- Slides -->
                     <div class="swiper-slide"><x-video /></div>
                     <div class="swiper-slide"><img src="https://cdn.pixabay.com/photo/2015/11/16/22/39/balloons-1046658_960_720.jpg" alt="" class="w-full h-[500px] block object-scale-down"></div>
-                    <div class="swiper-slide">Slide 3</div>
-                    
+                    <div class="swiper-slide"><img src="https://cdn.pixabay.com/photo/2019/10/19/12/21/hot-air-balloons-4561264_960_720.jpg" alt="" class="w-full h-[500px] block object-scale-down"></div>
+                    <div class="swiper-slide"><img src="https://cdn.pixabay.com/photo/2023/11/14/11/07/sparrow-8387465_960_720.jpg" alt="" class="w-full h-[500px] block object-scale-down"></div>
                 </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
             
                 <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev z-10 absolute top-1/2 p-2">
+                    <div class="bg-white text-gray-900 rounded-full p-1 border">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.8" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="swiper-button-next z-10 absolute right-0 top-1/2 p-2">
+                    <div class="bg-white text-gray-900 rounded-full p-1 border">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.8" stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </div>
+                </div>
             
                 <!-- If we need scrollbar -->
                 <div class="swiper-scrollbar"></div>
@@ -108,9 +120,9 @@
     {{-- comments --}}
     <form x-data="{inputText:''}" class="w-full grid grid-cols-12 items-center">
         @csrf
-        <input x-model="inputText" type="text" class="px-1 rounded-lg border-0 col-span-10 outline-none placeholder:text-sm focus:outline-none hover:ring-0 right-0" placeholder="Leave a comment">
+        <input x-model="inputText" type="text" class="px-1 my-2 rounded-lg border-0 col-span-10 outline-none placeholder:text-sm focus:outline-none hover:ring-0 right-0" placeholder="Leave a comment">
 
-        <div class="col-span-1 flex ml-auto justify-end text-right">
+        <div class="col-span-1 mb-3 flex ml-auto justify-end text-right">
             <button x-cloak x-show="inputText.length > 0" class="text-blue-500 font-semibold">
                 Post
             </button>
