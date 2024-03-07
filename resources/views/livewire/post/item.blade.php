@@ -3,7 +3,7 @@
     {{-- Header --}}
     <header class="flex items-center gap-3">
 
-        <x-avatar src="https://source.unsplash.com/500x500?face" class="h-9 w-9"/>
+        <x-avatar src="https://source.unsplash.com/500x500" class="h-9 w-9"/>
 
         <div class="grid grid-cols-7 w-full gap-2">
             <div class="col-span-5">

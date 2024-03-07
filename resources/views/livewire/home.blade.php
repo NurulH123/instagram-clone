@@ -29,7 +29,7 @@
     
                     @for ($i = 0; $i < 10; $i++)
                         <li class="flex flex-col justify-center w-20 gap-1 p-1">
-                            <x-avatar story src="https://source.unsplash.com/500x500?face-{{ $i }}" class="h-14 w-14"/>
+                            <x-avatar story src="https://source.unsplash.com/500x500?natural-{{ $i }}" class="h-14 w-14"/>
                             <p class="text-xs font-medium truncate">{{ fake()->name }}</p>
                         </li>
                     @endfor
