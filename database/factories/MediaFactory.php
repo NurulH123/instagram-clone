@@ -72,6 +72,7 @@ class MediaFactory extends Factory
         }
     }
 
+    # chainable method
     function reel() : Factory
     {
         $url = $this->getUrl('reel');
@@ -86,6 +87,7 @@ class MediaFactory extends Factory
         });
     }
 
+    # chainable method
     function post() : Factory
     {
         $url = $this->getUrl('post');
