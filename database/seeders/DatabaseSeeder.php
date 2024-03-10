@@ -16,6 +16,12 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
-        Post::factory(20)->create(['type' => 'reel']);
+        // \App\Models\User::factory()->create([
+        //     'name' => 'Test User',
+        //     'email' => 'test@example.com',
+        // ]);
+
+        Post::factory()->count(20)->create(['type'=>'reel']);
+        Post::factory()->count(10,30)->create(['type'=>'post']);
     }
 }
