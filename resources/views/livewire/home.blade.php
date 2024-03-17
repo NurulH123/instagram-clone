@@ -36,10 +36,15 @@
     
                 </ul>
             </section>
-
             {{-- Post Items --}}
             <section class="mt-5 space-y-4">
-                <livewire:post.item />
+                @if ($posts)
+                    @foreach ($posts->take(10) as $post)
+                        <livewire:post.item wire:key="{{ $post->id }}" :post="$post"/>
+                    @endforeach
+                @else
+                    <p class="text-medium text-grey">No Post</p>
+                @endif
             </section>
         </aside>
 
