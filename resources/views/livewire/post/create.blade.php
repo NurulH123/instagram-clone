@@ -21,6 +21,7 @@
 
         <main class="grid grid-cols-12 gap-3 w-full h-full overflow-hidden">
 
+            {{-- media --}}
             <aside class="lg:col-span-7 items-center m-auto w-full overflow-scroll">
 
                 <label for="customFile" class="m-auto max-w-fit cursor-pointer flex flex-col gap-3">
@@ -52,6 +53,7 @@
 
             </aside>
 
+            {{-- side details --}}
             <aside class="lg:col-span-5 border-l p-3 h-full flex flex-col grap-4 overflow-hidden">
                 <div class="flex items-center gap-2">
                     <x-avatar class="w-9 h-9" />
